@@ -25,6 +25,7 @@ public class CityList {
 
     /**
      * This returns a sorted list of cities
+     * if par==1, sorts by city name, otherwise, sorts it by province name
      * @return
      *      Return the sorted list of cities
      */
