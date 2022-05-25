@@ -80,7 +80,7 @@ public class CityListTest {
     public void testCount()
     {
         CityList cityList = new CityList();
-        City city1 = new City("Jessore","Khulna");
+        City city1 = new City("Chuadanga","Khulna");
         City city2 = new City("Pabna","Rajshahi");
         cityList.add(city1);
         cityList.add(city2);
@@ -97,7 +97,7 @@ public class CityListTest {
     @Test
     public void testGetCities() {
         CityList cityList = new CityList();
-        City city1 = new City("YYYYYYY","CD");
+        City city1 = new City("YYABCD","CMNN");
         cityList.add(city1);
         assertEquals(0, city1.compareTo(cityList.getCities(1).get(0)));
 
@@ -114,7 +114,7 @@ public class CityListTest {
     @Test
     public void testGetCitiesWithProvince() {
         CityList cityList = new CityList();
-        City city1 = new City("ZZZZZZZ","CD");
+        City city1 = new City("XXXXYYY","CC");
         cityList.add(city1);
         assertEquals(0, city1.compareTo(cityList.getCities(1).get(0)));
 
