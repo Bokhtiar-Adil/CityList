@@ -27,6 +27,10 @@ public class CityListTest {
         assertTrue(cityList.getCities(1).contains(city));
     }
 
+    /**
+     * This is a test method for delete method.
+     * It returns void.
+     */
     @Test
     public void testDelete()
     {
@@ -51,6 +55,9 @@ public class CityListTest {
         });
     }
 
+    /**
+     * for testing whether the delete method throws exception for certain case.
+     */
     @Test
     public void testDeleteException(){
         CityList cityList = new CityList();
@@ -65,6 +72,10 @@ public class CityListTest {
         });
     }
 
+    /**
+     * This is a test method for count method.
+     * It returns void.
+     */
     @Test
     public void testCount()
     {
@@ -80,12 +91,13 @@ public class CityListTest {
     }
 
     /**
-     * This is a test method for GetCities.
+     * This is a test method for GetCities method.
+     * It return void.
      */
     @Test
     public void testGetCities() {
         CityList cityList = new CityList();
-        City city1 = new City("ZZZZZZZZ","CD");
+        City city1 = new City("YYYYYYY","CD");
         cityList.add(city1);
         assertEquals(0, city1.compareTo(cityList.getCities(1).get(0)));
 
@@ -96,6 +108,9 @@ public class CityListTest {
         assertEquals(0, city1.compareTo(cityList.getCities(1).get(1)));
     }
 
+    /**
+     * To test sorting with province.
+     */
     @Test
     public void testGetCitiesWithProvince() {
         CityList cityList = new CityList();
